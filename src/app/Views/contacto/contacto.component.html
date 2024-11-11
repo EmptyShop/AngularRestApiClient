@@ -1,0 +1,33 @@
+<div class="mat-elevation-z2" style="width: 60%; padding: 30px; margin: 10px auto; display: flex; justify-content: center;">
+    <form [formGroup]="formContacto">
+        <div class="flex">
+            <mat-label>
+                <h1>Contacto</h1>
+            </mat-label>
+        </div>
+        <div class="flex">
+            <mat-form-field>
+                <mat-label>Nombre Completo</mat-label>
+                <input matInput formControlName="fullname">
+            </mat-form-field>
+        </div>
+        <div class="flex">
+            <mat-form-field>
+                <mat-label>eMail</mat-label>
+                <input matInput type="email" formControlName="email">
+            </mat-form-field>
+        </div>
+        <div class="flex">
+            <mat-form-field>
+                <mat-label>Teléfono</mat-label>
+                <input matInput formControlName="phone">
+            </mat-form-field>
+        </div>
+        <div class="flex">
+            <button mat-flat-button color="primary" 
+                [disabled]="!formContacto.valid" 
+                (click)="guardarContacto()">Guardar</button>
+            <button mat-flat-button (click)="volver()" style="margin-left: 10px;">Volver</button>
+    </div>
+    </form>
+</div>

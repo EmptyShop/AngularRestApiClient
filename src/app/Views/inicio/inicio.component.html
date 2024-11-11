@@ -1,0 +1,47 @@
+<mat-card appearance="outlined" style="width:75%; margin:20px auto">
+    <mat-card-header>
+        <mat-card-title><p>Contactos</p></mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <button mat-flat-button (click)="nuevoContacto()">Nuevo Contacto</button>
+        <table mat-table [dataSource]="listaContactos" class="mat-elevation-z8" style="margin-top:20px">
+
+            <!--- Note that these columns can be defined in any order.
+                  The actual rendered columns are set as a property on the row definition" -->
+          
+            <!-- Position Column -->
+            <ng-container matColumnDef="fullname">
+              <th mat-header-cell *matHeaderCellDef> Nombre Completo </th>
+              <td mat-cell *matCellDef="let element"> {{element.fullname}} </td>
+            </ng-container>
+          
+            <!-- Name Column -->
+            <ng-container matColumnDef="email">
+              <th mat-header-cell *matHeaderCellDef> eMail </th>
+              <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+            </ng-container>
+          
+            <!-- Weight Column -->
+            <ng-container matColumnDef="phone">
+              <th mat-header-cell *matHeaderCellDef> Teléfono </th>
+              <td mat-cell *matCellDef="let element"> {{element.phone}} </td>
+            </ng-container>
+          
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="accion">
+              <th mat-header-cell *matHeaderCellDef> </th>
+              <td mat-cell *matCellDef="let element">
+                <button mat-mini-fab (click)="editarContacto(element)">
+                    <mat-icon color="primary">edit</mat-icon>
+                </button>
+                <button mat-mini-fab style="margin-left: 10px;" (click)="eliminarContacto(element)">
+                    <mat-icon color="warn">delete</mat-icon>
+                </button>
+              </td>
+            </ng-container>
+          
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+    </mat-card-content>
+  </mat-card>
