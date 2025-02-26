@@ -1,4 +1,21 @@
-# RestApiClientApp
+# AngularRestApiClient
+
+Cliente de API Rest (Angular)
+
+Este proyecto lo hice como parte de un conjunto de aplicaciones que consumen una API que programé en Python para las operaciones básicas (CRUD) de una lista de contactos: [Contact List App](https://github.com/EmptyShop/FlaskSqlAlchemyApp). Este proyecto (AngularRestApiClient) es un cliente para Web, codificado en Angular. La UI contiene una tabla con la lista de contactos registrados. Una segunda página de la UI se accede desde los botones Agregar y Actualizar; esta página contiene 3 campos de texto correspondientes a nombre, email y teléfono para editar sus valores.
+
+# Cómo lo Hice
+
+## En este proyecto utilicé:
+
+  * Angular 18.1.2
+  * Angular Material UI 18.1.2
+
+## Lo implementé así:
+
+  * En el template del componente de inicio `inicio.component.html` 
+
+# Documentación Autogenerada por Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.2.
 
