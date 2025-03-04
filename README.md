@@ -58,7 +58,7 @@ Este proyecto lo hice como parte de un conjunto de aplicaciones que consumen una
 
 ## La ayuda que utilicé:
 
-Para este proyecto me basé en tres videos que muestran cómo consumir servicios Restfull con Angular. Yo lo adapté a mi propia API y además me apoyé en información complementaria:
+Para este proyecto me basé en tres videos que muestran cómo consumir servicios Restful con Angular. Yo lo adapté a mi propia API y además me apoyé en información complementaria:
 
   * [Cómo consumir una API RESTFul con Angular](https://www.youtube.com/watch?v=mTTVJcr0D_I)
   * [Angular CRUD Simple](https://www.youtube.com/watch?v=arGRTVdG--c)
@@ -71,7 +71,7 @@ Para este proyecto me basé en tres videos que muestran cómo consumir servicios
 
 # Lo que sigue
 
-El alcance de este proyecto es comparar el desempeño y las implementaciones de cada versión de app cliente para consumo de servicios Restfull que tengo en este repositorio (Angular, [React](https://github.com/EmptyShop/ReactRestApiClient), [Vue](https://github.com/EmptyShop/VueRestApiClient) y [Kotlin](https://github.com/EmptyShop/KotlinRestApiClient)). Por lo que no tengo planeado agregar o modificar funcionalidades.
+El alcance de este proyecto es comparar el desempeño y las implementaciones de cada versión de app cliente para consumo de servicios Restful que tengo en este repositorio (Angular, [React](https://github.com/EmptyShop/ReactRestApiClient), [Vue](https://github.com/EmptyShop/VueRestApiClient) y [Kotlin](https://github.com/EmptyShop/KotlinRestApiClient)). Por lo que no tengo planeado agregar o modificar funcionalidades.
 
 Siéntete libre de comentar y sugerir cosas para esta app.
 
